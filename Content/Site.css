@@ -1,4 +1,5 @@
 ﻿body {
+    background-image: url("images/bg.png");
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -22,3 +23,28 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.logo{
+    border-radius: 50%;
+    margin-top: -14px;
+}
+
+.poster{
+    height: 600px;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.bump-up {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #ccc;
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+    .bump-up img:hover {
+        margin-top: 2px;
+    }
