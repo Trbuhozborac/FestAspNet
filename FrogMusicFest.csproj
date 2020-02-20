@@ -174,6 +174,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002112019184_InitialCreate.cs" />
+    <Compile Include="Migrations\202002112019184_InitialCreate.Designer.cs">
+      <DependentUpon>202002112019184_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002201341438_InitialMigration.cs" />
+    <Compile Include="Migrations\202002201341438_InitialMigration.Designer.cs">
+      <DependentUpon>202002201341438_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002201342010_SeedUsers.cs" />
+    <Compile Include="Migrations\202002201342010_SeedUsers.Designer.cs">
+      <DependentUpon>202002201342010_SeedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -237,6 +250,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Izvodjaci\Index.cshtml" />
+    <Content Include="Views\Izvodjaci\AdminIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -253,6 +267,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002112019184_InitialCreate.resx">
+      <DependentUpon>202002112019184_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002201341438_InitialMigration.resx">
+      <DependentUpon>202002201341438_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002201342010_SeedUsers.resx">
+      <DependentUpon>202002201342010_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

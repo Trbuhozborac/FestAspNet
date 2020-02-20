@@ -11,7 +11,10 @@ namespace FrogMusicFest.Controllers
         // GET: Izvodjaci
         public ActionResult Index()
         {
-            return View();
+            if (User.IsInRole("AdminDodaje"))
+                return View("AdminIndex");
+            return View("Index");
         }
+
     }
 }
